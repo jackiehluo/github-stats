@@ -1,7 +1,6 @@
 import os
 import requests
 
-
 users = open("users.txt", "a")
 p = "161355"
 
