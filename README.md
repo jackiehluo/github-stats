@@ -1,41 +1,44 @@
-#Top Contributions
-| User           | Contributions |
-|----------------|---------------|
-| will           | 7566          |
-| smn            | 7244          |
-| joshua         | 6427          |
-| jeremyf        | 5760          |
-| michaelklishin | 5136          |
-| jgm            | 5030          |
-| mitchellh      | 4918          |
-| JJ             | 4694          |
-| mlandauer      | 4391          |
-| stefanpenner   | 4310          |
+#GitHub Stats
+Pulled from the first 80,000 users on GitHub. Updated on 7/16/15.
 
-#Longest Streak
-| User           | Streak Length |
-|----------------|---------------|
-| dustin         | 921           |
-| jeresig        | 596           |
-| michaelklishin | 561           |
-| kana           | 530           |
-| davidt         | 361           |
-| getconor       | 323           |
-| JJ             | 300           |
-| alphabetum     | 240           |
-| jkutner        | 176           |
-| bryanveloso    | 173           |
+##Top Contributions
+| User          | Contributions |
+|---------------|---------------|
+| tef           | 119524        |
+| kinlane       | 28792         |
+| ejucovy       | 25837         |
+| weierophinney | 25237         |
+| kratorius     | 21966         |
+| riaf          | 14714         |
+| avsm          | 9742          |
+| joamag        | 9423          |
+| garaemon      | 9408          |
+| fabpot        | 8454          |
 
-#Longest Current Streak
-| User           | Streak Length |
-|----------------|---------------|
-| dustin         | 921           |
-| jeresig        | 596           |
-| michaelklishin | 561           |
-| kana           | 530           |
-| davidt         | 361           |
-| getconor       | 323           |
-| JJ             | 300           |
-| alphabetum     | 240           |
-| jkutner        | 176           |
-| bryanveloso    | 173           |
+##Longest Streak
+| User       | Contributions |
+|------------|---------------|
+| kratorius  | 4183          |
+| tef        | 2920          |
+| chapmanb   | 929           |
+| dustin     | 921           |
+| chastell   | 918           |
+| bigeasy    | 913           |
+| passy      | 896           |
+| ajlopez    | 859           |
+| tanelpuhu  | 845           |
+| pkulchenko | 841           |
+
+##Longest Current Streak
+| User       | Contributions |
+|------------|---------------|
+| kratorius  | 4183          |
+| tef        | 2920          |
+| chapmanb   | 929           |
+| dustin     | 921           |
+| chastell   | 918           |
+| bigeasy    | 913           |
+| passy      | 896           |
+| ajlopez    | 859           |
+| tanelpuhu  | 845           |
+| pkulchenko | 841           |
