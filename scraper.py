@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 with open('users.txt') as f:
-    for i in xrange(80142):
+    for i in xrange(95248):
         f.next()
     for line in f:
         line = line.rstrip('\n')

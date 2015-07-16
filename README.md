@@ -1,5 +1,5 @@
 #GitHub Stats
-Pulled from the first 80,000 users on GitHub. Updated on 7/16/15.
+Pulled from the first 95,000 users on GitHub. Updated on 7/16/15.
 
 ##Top Contributions
 | User          | Contributions |
@@ -9,11 +9,11 @@ Pulled from the first 80,000 users on GitHub. Updated on 7/16/15.
 | avsm          | 9742          |
 | joamag        | 9423          |
 | garaemon      | 9408          |
+| linas         | 9147          |
 | fabpot        | 8454          |
 | jlukic        | 8353          |
 | alexcrichton  | 8222          |
 | kou           | 7943          |
-| smn           | 7244          |
 
 ##Longest Streak
 | User       | Days |
@@ -26,8 +26,8 @@ Pulled from the first 80,000 users on GitHub. Updated on 7/16/15.
 | ajlopez    | 859  |
 | pkulchenko | 841  |
 | 0xd34df00d | 800  |
+| zmughal    | 750  |
 | leafo      | 738  |
-| jmettraux  | 734  |
 
 ##Longest Current Streak
 | User       | Days |
@@ -40,5 +40,5 @@ Pulled from the first 80,000 users on GitHub. Updated on 7/16/15.
 | ajlopez    | 859  |
 | pkulchenko | 841  |
 | 0xd34df00d | 800  |
+| zmughal    | 750  |
 | leafo      | 738  |
-| jmettraux  | 734  |
