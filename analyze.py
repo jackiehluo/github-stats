@@ -1,6 +1,7 @@
 c = {}
 ls = {}
 cs = {}
+cheaters = {"tef", "ejucovy", "kratorius", "riaf", "tanelpuhu", "will"}
 
 with open('data.txt') as f:
     for line in f:
@@ -21,23 +22,26 @@ with open('data.txt') as f:
 print "Top Contributions"
 count = 0
 for k, v in sorted(c.iteritems(), key=lambda (k, v): (v, k), reverse = True):
-    count += 1
-    print k, v
+    if k not in cheaters:
+        count += 1
+        print k, v
     if count == 10:
         break
 
 count = 0
 print "Longest Streak"
 for k, v in sorted(ls.iteritems(), key=lambda (k, v): (v, k), reverse = True):
-    count += 1
-    print k, v
+    if k not in cheaters:
+        count += 1
+        print k, v
     if count == 10:
         break
 
 count = 0
 print "Longest Current Streak"
 for k, v in sorted(cs.iteritems(), key=lambda (k, v): (v, k), reverse = True):
-    count += 1
-    print k, v
+    if k not in cheaters:
+        count += 1
+        print k, v
     if count == 10:
         break
