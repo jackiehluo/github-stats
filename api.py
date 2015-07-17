@@ -1,8 +1,9 @@
 import os
 import requests
+from config import *
 
 users = open("users.txt", "a")
-p = "161355"
+p = "325781"
 
 while True:
     url = ("https://api.github.com/users?client_id=" +

@@ -1,8 +1,11 @@
 c = {}
 ls = {}
 cs = {}
+
+#People who have commits from profile cheats, bots/loggers, etc.
 cheaters = {"tef", "ejucovy", "kratorius", "riaf", "tanelpuhu", "will",
-            "addyosmani", "Ocramius", "susheel", "mahipal", "kanzure"}
+            "addyosmani", "Ocramius", "susheel", "mahipal", "kanzure",
+            "kinlane", "weierophinney", "bapt", "avsm", "ashie", "smn"}
 
 with open('data.txt') as f:
     for line in f:
