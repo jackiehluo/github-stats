@@ -1,19 +1,19 @@
 #GitHub Stats
-Pulled from the first 95,000 users on GitHub. Updated on 7/16/15.
+Pulled from the first 150,000 users on GitHub. Updated on 7/16/15.
 
-##Top Contributions
+##Most Contributions
 | User          | Contributions |
 |---------------|---------------|
 | kinlane       | 28792         |
 | weierophinney | 25237         |
+| bapt          | 10036         |
 | avsm          | 9742          |
 | joamag        | 9423          |
 | garaemon      | 9408          |
 | linas         | 9147          |
 | fabpot        | 8454          |
 | jlukic        | 8353          |
-| alexcrichton  | 8222          |
-| kou           | 7943          |
+| minrk         | 8275          |
 
 ##Longest Streak
 | User       | Days |

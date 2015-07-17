@@ -1,7 +1,8 @@
 c = {}
 ls = {}
 cs = {}
-cheaters = {"tef", "ejucovy", "kratorius", "riaf", "tanelpuhu", "will"}
+cheaters = {"tef", "ejucovy", "kratorius", "riaf", "tanelpuhu", "will",
+            "addyosmani", "Ocramius", "susheel", "mahipal", "kanzure"}
 
 with open('data.txt') as f:
     for line in f:
@@ -19,7 +20,7 @@ with open('data.txt') as f:
             current_streak = int(l[1])
             print user, contributions, longest_streak, current_streak
 
-print "Top Contributions"
+print "Most Contributions"
 count = 0
 for k, v in sorted(c.iteritems(), key=lambda (k, v): (v, k), reverse = True):
     if k not in cheaters:
