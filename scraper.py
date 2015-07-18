@@ -1,26 +1,38 @@
 from bs4 import BeautifulSoup
+from datetime import datetime
+from pymongo import MongoClient
+import os
 import requests
 
-r = requests.Session()
+from config import *
 
-with open('users.txt') as f:
-    for count, line in enumerate(f):
-        if count < 299447:
-            continue
-        elif count >= 299447 and count < 350000:
-            line = line.rstrip('\n')
-            profile = r.get('https://github.com/' + line)
-            data = profile.text
-            soup = BeautifulSoup(data)
-            stats = soup.find_all("span", {"class" : "contrib-number"})
-            if stats:
-                contributions = int(stats[0].string.split()[0].replace(",", ""))
-                longest_streak = int(stats[1].string.split()[0].replace(",", ""))
-                current_streak = int(stats[2].string.split()[0].replace(",", ""))
-                print "User:", line
-                print "Total Contributions:", contributions
-                print "Longest Streak:", longest_streak
-                print "Current Streak:", current_streak
-                print
-        else:
-            break
+
+client = MongoClient()
+db = client['github-stats']
+r = requests.Session()
+p = "325781"
+
+while True:
+    url = ("https://api.github.com/users?client_id=" +
+            os.environ['CLIENT_ID'] + "&client_secret=" +
+            os.environ['CLIENT_SECRET'] + "&since=" + p)
+    response = r.get(url)
+    users = response.json()
+    for user in users:
+        profile = r.get('https://github.com/' + user["login"])
+        soup = BeautifulSoup(profile.text)
+        stats = soup.find_all("span", {"class" : "contrib-number"})
+        if stats:
+            contributions = int(stats[0].string.split()[0].replace(",", ""))
+            longest_streak = int(stats[1].string.split()[0].replace(",", ""))
+            current_streak = int(stats[2].string.split()[0].replace(",", ""))
+            entry = {"id": user["id"],
+                    "username": user["login"],
+                    "contributions": contributions,
+                    "longest_streak": longest_streak,
+                    "current_streak": current_streak,
+                    "last_updated": datetime.now()}
+            db.users.insert(entry)
+            print user["login"], user["id"]
+        if r["id"] > int(p):
+            p = str(r["id"])

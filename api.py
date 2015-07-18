@@ -2,7 +2,8 @@ import os
 import requests
 from config import *
 
-#p = "325781" Return to scraping with this id
+#Only included to get IDs from previously called users. Will delete after reaching ID #325781.
+
 p = "164818"
 
 while True:
