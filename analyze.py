@@ -13,7 +13,10 @@ db = client['github-stats']
 #People who have commits from profile cheats, bots/loggers, etc.
 cheaters = {"tef", "ejucovy", "kratorius", "riaf", "tanelpuhu", "will",
             "addyosmani", "Ocramius", "susheel", "mahipal", "kanzure",
-            "kinlane", "weierophinney", "bapt", "avsm", "ashie", "smn"}
+            "kinlane", "weierophinney", "bapt", "avsm", "ashie", "smn",
+            "KenanSulayman", "s4l1h", "kaizhu256", "hintjens", "vitalyvolkov",
+            "nylen", "kcwu", "seangirard", "fenollp", "brianchandotcom",
+            "msgambel"}
 
 with open('data.txt') as f:
     for i in xrange(752154):
