@@ -2,8 +2,8 @@ import os
 import requests
 from config import *
 
-users = open("users.txt", "a")
-p = "325781"
+#p = "325781" Return to scraping with this id
+p = "164818"
 
 while True:
     url = ("https://api.github.com/users?client_id=" +
@@ -12,7 +12,6 @@ while True:
     response = requests.get(url)
     response_dict = response.json()
     for r in response_dict:
-        users.write(r["login"] + "\n")
         print r["login"], r["id"]
         if r["id"] > int(p):
             p = str(r["id"])
