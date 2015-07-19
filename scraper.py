@@ -10,7 +10,7 @@ from config import *
 client = MongoClient()
 db = client['github-stats']
 r = requests.Session()
-p = "325781"
+p = "384947"
 
 while True:
     url = ("https://api.github.com/users?client_id=" +
@@ -34,5 +34,5 @@ while True:
                     "last_updated": datetime.now()}
             db.users.insert(entry)
             print user["login"], user["id"]
-        if r["id"] > int(p):
-            p = str(r["id"])
+        if user["id"] > int(p):
+            p = str(user["id"])
